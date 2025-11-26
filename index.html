@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La felicidad de José José</title>
+    <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background-color: #f8f8f8;
+      color: #333;
+    }
+
+    header {
+      background-color: #0a2a9f;
+      color: white;
+      padding: 20px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    header img {
+      height: 100px;
+    }
+
+    .header-text {
+      text-align: center;
+      flex: 1;
+    }
+
+    .header-text h1 {
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 2.2em;
+      margin: 0;
+    }
+
+    nav {
+      background-color: #3290e8;
+      display: flex;
+      justify-content: center;
+      position: relative;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 15px 20px;
+      display: inline-block;
+      position: relative;
+    }
+
+    nav a:hover {
+      background-color: #0a2a9f;
+    }
+
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #1b2cc6;
+      min-width: 200px;
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      display: block;
+      padding: 12px 20px;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .banner {
+      background: url('images/collage.jpg') no-repeat center;
+      background-size: cover;
+      background-position: 55% 45%;
+      height: 250px;
+      position: relative;
+    }
+
+    .banner::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .banner h2 {
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      color: rgb(255, 255, 255);
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 2.2em;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h3 {
+      font-family: 'Times New Roman', Times, serif;
+      color: #5a2a27;
+      font-size: 1.8em;
+      margin-top: 30px;
+    }
+
+    .historia-texto {
+      line-height: 1.8;
+      font-size: 1.1em;
+      text-align: justify;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      background-color: #04396a;
+      color: white;
+      text-align: center;
+      padding: 30px 10px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .dropdown-content {
+        position: static;
+      }
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <img src="images/josejosej.jpg" alt="logo Recetario José José">
+        </div>
+        <div class="header-text">
+            <h1>La felicidad de José José</h1>
+            <p>El recetario de José José</p>
+        </div>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <div class="dropdown">
+            <a>Platillos ▾</a>
+            <div class="dropdown-content">
+              <a href="entradas.html">Entradas</a>
+              <a href="platofuerte.html">Plato fuerte</a>
+            </div>
+        </div>
+        <a href="postres.html">Postres</a>
+        <a href="bebidas.html">Bebidas</a>
+        <a></a>
+    </nav>
+
+    <div class="banner">
+        <h2>Sube a la nave del olvido para quedarte preso de estos platillos y bebidas</h2>
+    </div>
+
+    <div class="container">
+      <h2>¡Bienvenidos al Recetario de José José!</h2>
+
+      <p class="historia-texto">
+        En esta casa culinaria celebramos el sabor, la nostalgia y la alegría que siempre acompañaron la voz del Príncipe de la Canción.  
+        Aquí encontrarás platillos que evocan recuerdos, bebidas para brindar con el alma y postres que endulzan incluso los días más difíciles.
+      </p>
+
+      <p class="historia-texto">
+          Este recetario está inspirado en esos momentos donde la cocina une, sana y reconcilia. Porque, como decía José José, 
+          <em>"lo pasado, pasado"</em>, y siempre habrá un buen trago, un platillo casero o un postre cálido que nos recuerde 
+          que la vida también sabe rico.
+      </p>
+
+      <p class="historia-texto">
+          Navega por nuestras secciones para descubrir sabores que acompañan las mejores historias:  
+          desde entradas ligeras para comenzar, platos fuertes para conquistar, postres que derriten corazones  
+          y bebidas para levantar el espíritu.  
+      </p>
+
+      <p class="historia-texto">
+          Prepárate para cocinar, recordar y disfrutar…  
+          Porque aquí, cada receta está hecha con amor, música y corazón.
+      </p>
+
+      <h3>Momentos del Príncipe</h3>
+
+      <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; margin-top: 20px;">
+          <img src="images/jose1.jpg" alt="José José joven" style="width: 300px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.3);">
+          <img src="images/jose2.jpg" alt="José José en concierto" style="width: 300px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.3);">
+          <img src="images/jose3.jpg" alt="José José sonriente" style="width: 300px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.3);">
+          <img src="images/jose4.jpg" alt="José José comiendo" style="width: 300px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.3);">
+          <img src="images/jose5.jpg" alt="José José tomando" style="width: 300px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.3);">
+          <img src="images/jose6.jpg" alt="José José cantando" style="width: 300px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.3);">
+        </div>
+    </div>
+
+    <footer>
+        <img src="images/josejosej.jpg" alt="Logo Recetario de José José">
+        <p>&copy; 2025 La felicidad de José José | Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
