@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La felicidad de José José</title>
+    <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background-color: #f8f8f8;
+      color: #333;
+    }
+
+    header {
+      background-color: #0a2a9f;
+      color: white;
+      padding: 20px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    header img {
+      height: 100px;
+    }
+
+    .header-text {
+      text-align: center;
+      flex: 1;
+    }
+
+    .header-text h1 {
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 2.2em;
+      margin: 0;
+    }
+
+    nav {
+      background-color: #3290e8;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 15px 20px;
+      display: inline-block;
+    }
+
+    nav a:hover {
+      background-color: #0a2a9f;
+    }
+
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #1b2cc6;
+      min-width: 200px;
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      display: block;
+      padding: 12px 20px;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .banner {
+      background: url('images/comida.jpg') no-repeat center;
+      background-size: cover;
+      height: 250px;
+      position: relative;
+    }
+
+    .banner::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .banner h2 {
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 2.2em;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-family: 'Times New Roman', serif;
+      color: #5a2a27;
+    }
+
+    h3 {
+      font-family: 'Times New Roman', serif;
+      color: #5a2a27;
+      font-size: 1.8em;
+      margin-top: 50px;
+      margin-bottom: 10px;
+    }
+
+    .receta {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+    }
+
+    .receta img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    table {
+      width: 350px;
+      border-collapse: collapse;
+      background: white;
+    }
+
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+
+    th {
+      background-color: #f0e7e7;
+      padding: 10px;
+      font-size: 1.1em;
+      font-weight: bold;
+    }
+
+    td {
+      padding: 10px;
+    }
+
+    .instrucciones {
+      flex: 1;
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+
+    footer {
+      background-color: #04396a;
+      color: white;
+      text-align: center;
+      padding: 30px 10px;
+      margin-top: 40px;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <img src="images/josejosej.jpg" alt="logo Recetario José José">
+        </div>
+        <div class="header-text">
+            <h1>La felicidad de José José</h1>
+            <p>El recetario de José José</p>
+        </div>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <div class="dropdown">
+            <a>Platillos ▾</a>
+            <div class="dropdown-content">
+              <a href="entradas.html">Entradas</a>
+              <a href="platofuerte.html">Plato fuerte</a>
+            </div>
+        </div>
+        <a href="postres.html">Postres</a>
+        <a href="bebidas.html">Bebidas</a>
+        <a></a>
+    </nav>
+
+    <div class="banner">
+        <h2>Aquí encontrarás el elixir de José José</h2>
+    </div>
+
+    <div class="container">
+       <h2>Bebidas con Destilados</h2>
+
+<h3>1. Mojito Clásico</h3>
+  <div class="receta">
+    <img src="images/mojito.jpg" alt="Mojito">
+    <table>
+        <tr><th>Ingrediente</th><th>Cantidad</th></tr>
+        <tr><td>Ron blanco</td><td>50 ml</td></tr>
+        <tr><td>Hojas de hierbabuena</td><td>10 hojas</td></tr>
+        <tr><td>Azúcar</td><td>2 cucharadas</td></tr>
+        <tr><td>Jugo de limón</td><td>30 ml</td></tr>
+        <tr><td>Agua mineral</td><td>Al gusto</td></tr>
+        <tr><td>Hielo</td><td>Al gusto</td></tr>
+    </table>
+    <div class="instrucciones">
+        <p>1. Coloca las hojas de hierbabuena en un vaso grande.</p> 
+        <p>2. Añade el azúcar y el jugo de limón.</p>
+        <p>3. Machaca suavemente para liberar los aromas sin romper demasiado las hojas.</p>  
+        <p>4. Agrega el ron y mezcla bien.</p>  
+        <p>5. Llena el vaso con hielo y termina con agua mineral.</p>  
+        <p>6. Mezcla con una cuchara larga y sirve con una ramita de hierbabuena.</p>
+    </div>
+  </div>
+
+  <h3>2. Margarita Clásica</h3>
+  <div class="receta">
+      <img src="images/margarita.jpg" alt="Margarita">
+    <table>
+        <tr><th>Ingrediente</th><th>Cantidad</th></tr>
+        <tr><td>Tequila blanco</td><td>50 ml</td></tr>
+        <tr><td>Triple sec</td><td>25 ml</td></tr>
+        <tr><td>Jugo de limón</td><td>30 ml</td></tr>
+        <tr><td>Sal</td><td>Para escarchar</td></tr>
+        <tr><td>Hielo</td><td>Al gusto</td></tr>
+    </table>
+    <div class="instrucciones">
+        <p>1. Escarcha una copa con sal humedeciendo el borde con limón.</p> 
+        <p>2. En una coctelera coloca hielo, tequila, triple sec y jugo de limón.</p>  
+        <p>3. Agita vigorosamente por 10–12 segundos.</p>
+        <p>4. Sirve colado en la copa escarchada y decora con una rodaja de limón.</p>
+    </div>
+  </div>
+
+  <h3>3. Piña Colada</h3>
+  <div class="receta">
+      <img src="images/pinacolada.jpg" alt="Piña Colada">
+    <table>
+        <tr><th>Ingrediente</th><th>Cantidad</th></tr>
+        <tr><td>Ron blanco</td><td>45 ml</td></tr>
+        <tr><td>Crema de coco</td><td>60 ml</td></tr>
+        <tr><td>Jugo de piña</td><td>100 ml</td></tr>
+        <tr><td>Hielo</td><td>1 taza</td></tr>
+    </table>
+    <div class="instrucciones">
+        <p>1. Licúa el ron, la crema de coco, el jugo de piña y el hielo.</p>  
+        <p>2. Procesa hasta obtener una mezcla espesa y suave.</p>  
+        <p>3. Sirve en un vaso alto y decora con piña fresca o cereza.</p>
+    </div>
+  </div>
+
+  <h3>4. Carajillo</h3>
+  <div class="receta">
+  <img src="images/carajillo.jpg" alt="Carajillo">
+  <table>
+      <tr><th>Ingrediente</th><th>Cantidad</th></tr>
+      <tr><td>Licor 43</td><td>50 ml</td></tr>
+      <tr><td>Café espresso</td><td>1 taza</td></tr>
+      <tr><td>Hielo</td><td>Al gusto</td></tr>
+  </table>
+    <div class="instrucciones">
+      <p>1. Coloca hielo en un vaso old fashioned.</p>  
+      <p>2. Agrega el Licor 43.</p>  
+      <p>3. Prepara el espresso y viértelo lentamente sobre el licor.</p>  
+      <p>4. Mezcla suavemente y sirve frío.</p>
+    </div>
+  </div>
+
+  <h3>5. Daiquiri de Fresa</h3>
+  <div class="receta">
+  <img src="images/daiquiri.jpg" alt="Daiquiri">
+  <table>
+      <tr><th>Ingrediente</th><th>Cantidad</th></tr>
+      <tr><td>Ron blanco</td><td>45 ml</td></tr>
+      <tr><td>Fresas frescas</td><td>1 taza</td></tr>
+      <tr><td>Azúcar</td><td>1 cucharada</td></tr>
+      <tr><td>Jugo de limón</td><td>20 ml</td></tr>
+      <tr><td>Hielo</td><td>1 taza</td></tr>
+  </table>
+    <div class="instrucciones">
+      <p>1. Lleva todos los ingredientes a la licuadora.</p>  
+      <p>2. Licúa hasta obtener una consistencia frappé.</p>  
+      <p>3. Sirve en copa fría y decora con una fresa entera.</p>
+    </div>
+  </div>  
+
+  <h3>6. Martini de Vodka</h3>
+  <div class="receta">
+  <img src="images/martini.jpg" alt="Martini">
+  <table>
+      <tr><th>Ingrediente</th><th>Cantidad</th></tr>
+      <tr><td>Vodka</td><td>60 ml</td></tr>
+      <tr><td>Vermut seco</td><td>10 ml</td></tr>
+      <tr><td>Aceitunas</td><td>2–3 piezas</td></tr>
+      <tr><td>Hielo</td><td>Al gusto</td></tr>
+  </table>
+  <div class="instrucciones">
+      <p>1. Coloca hielo en un vaso mezclador.</p>  
+      <p>2. Agrega el vodka y el vermut.</p>  
+      <p>3. Mezcla 15 segundos con una cuchara larga.</p>  
+      <p>4. Sirve colado en una copa fría y decora con aceitunas.</p>
+    </div>
+  </div>
+
+  <h3>7. Paloma</h3>
+  <div class="receta">
+  <img src="images/paloma.jpg" alt="Paloma">
+  <table>
+      <tr><th>Ingrediente</th><th>Cantidad</th></tr>
+      <tr><td>Tequila blanco</td><td>50 ml</td></tr>
+      <tr><td>Refresco de toronja</td><td>150 ml</td></tr>
+      <tr><td>Jugo de limón</td><td>10 ml</td></tr>
+      <tr><td>Hielo</td><td>Al gusto</td></tr>
+      <tr><td>Sal</td><td>Para escarchar</td></tr>
+  </table>
+    <div class="instrucciones">
+      <p>1. Escarcha un vaso con sal.</p>  
+      <p>2. Llena el vaso con hielo.</p>  
+      <p>3. Agrega el tequila y el jugo de limón.</p>  
+      <p>4. Rellena con el refresco de toronja y mezcla suavemente.</p>
+    </div>
+  </div>
+
+  <h3>8. Whiskey Sour</h3>
+  <div class="receta">
+  <img src="images/whiskeysour.jpg" alt="Whiskey Sour">
+  <table>
+      <tr><th>Ingrediente</th><th>Cantidad</th></tr>
+      <tr><td>Whiskey</td><td>50 ml</td></tr>
+      <tr><td>Jugo de limón</td><td>25 ml</td></tr>
+      <tr><td>Jarabe natural</td><td>20 ml</td></tr>
+      <tr><td>Hielo</td><td>Al gusto</td></tr>
+  </table>
+    <div class="instrucciones">
+      <p>1. En una coctelera coloca hielo, el whiskey, el jugo de limón y el jarabe.</p>  
+      <p>2. Agita por 12–15 segundos.</p>  
+      <p>3. Sirve colado en un vaso bajo con hielo.</p>  
+      <p>4. Decora con una rodaja de limón.</p>
+    </div>
+  </div>
+
+  <h3>9. Cosmopolitan</h3>
+  <div class="receta">
+  <img src="images/cosmopolitan.jpg" alt="Cosmopolitan">
+  <table>
+      <tr><th>Ingrediente</th><th>Cantidad</th></tr>
+      <tr><td>Vodka</td><td>45 ml</td></tr>
+      <tr><td>Triple sec</td><td>15 ml</td></tr>
+      <tr><td>Jugo de arándano</td><td>30 ml</td></tr>
+      <tr><td>Jugo de limón</td><td>10 ml</td></tr>
+      <tr><td>Hielo</td><td>Al gusto</td></tr>
+  </table>
+    <div class="instrucciones">
+      <p>1. Lleva todos los ingredientes a una coctelera con hielo.</p>  
+      <p>2. Agita muy bien hasta que el metal se enfríe</p> 
+      <p>3. Sirve colado en una copa fría y decora con cáscara de naranja flameada (opcional).</p>
+    </div>
+  </div>
+
+  <h3>10. Cuba Libre (Ron con Coca-Cola)</h3>
+  <div class="receta">
+  <img src="images/cubalibre.jpg" alt="Cuba Libre">
+  <table>
+      <tr><th>Ingrediente</th><th>Cantidad</th></tr>
+      <tr><td>Ron Bacardí (blanco o añejo)</td><td>50 ml</td></tr>
+      <tr><td>Coca-Cola</td><td>150–200 ml</td></tr>
+      <tr><td>Jugo de limón</td><td>10 ml</td></tr>
+      <tr><td>Rodaja de limón</td><td>1 pieza</td></tr>
+      <tr><td>Hielo</td><td>Al gusto</td></tr>
+  </table>
+    <div class="instrucciones">
+      <p>1. Llena un vaso alto con abundante hielo para mantener la bebida bien fría.</p>  
+      <p>2. Agrega los 50 ml de Bacardí directamente sobre el hielo.</p>
+      <p>3. Exprime una pequeña cantidad de jugo de limón para equilibrar el dulzor de la Coca-Cola.</p>  
+      <p>4. Rellena el vaso con Coca-Cola lentamente para no perder el gas.</p>  
+      <p>5. Mezcla suavemente con una cuchara larga para unir los sabores.</p>  
+      <p>6. Decora con una rodaja de limón en el borde del vaso y sirve inmediatamente.</p>  
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2025 La felicidad de José José | Todos los derechos reservados</p>
+</footer>
+</body>
+</html>
